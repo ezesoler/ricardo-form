@@ -1,0 +1,45 @@
+<div class="jumbotron text-center">
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <div class="form-group w-80 mx-auto text-left">
+      <div class="row">
+          <div class="col-6">
+              <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+        </div>
+    </div>
+    <div>
+      <div class="form-group w-80 mx-auto text-left">
+          <div class="row">
+              <div class="col-2">
+                  <div class="dropdown show">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Para:
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-5">
+                  <input type="text" class="form-control" placeholder="Mail">
+              </div>
+              <div class="col-5">
+                  <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group w-80 mx-auto text-left">
+      <button type="button" class="btn btn-success" (click)="addInput(content)"><i class="fas fa-plus-circle"></i> AGREGAR MAIL</button>
+    </div>
+    <hr class="my-4">
+    <div class="text-right">
+      <button type="button" class="btn btn-primary" [disabled]="msgExito === '' || msgFracaso === ''">CONTINUAR</button>
+    </div>
+  </div>
