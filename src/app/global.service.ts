@@ -7,5 +7,6 @@ export class GlobalService {
   static nameForm:string;
   static inputs:any = [];
   static msg:any;
+  static destination:any;
   constructor() { }
 }

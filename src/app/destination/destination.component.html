@@ -4,42 +4,21 @@
     <div class="form-group w-80 mx-auto text-left">
       <div class="row">
           <div class="col-6">
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" [(ngModel)]="destinations[0].email" placeholder="Email">
           </div>
           <div class="col-6">
-            <input type="text" class="form-control" placeholder="Nombre">
+            <input type="text" class="form-control" [(ngModel)]="destinations[0].name" placeholder="Nombre">
           </div>
         </div>
     </div>
-    <div>
-      <div class="form-group w-80 mx-auto text-left">
-          <div class="row">
-              <div class="col-2">
-                  <div class="dropdown show">
-                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Para:
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-              </div>
-              <div class="col-5">
-                  <input type="text" class="form-control" placeholder="Mail">
-              </div>
-              <div class="col-5">
-                  <input type="text" class="form-control" placeholder="Nombre">
-              </div>
-            </div>
-        </div>
+    <div #extras>
+      
     </div>
     <div class="form-group w-80 mx-auto text-left">
-      <button type="button" class="btn btn-success" (click)="addInput(content)"><i class="fas fa-plus-circle"></i> AGREGAR MAIL</button>
+      <button type="button" class="btn btn-success" (click)="addMail()"><i class="fas fa-plus-circle"></i> AGREGAR MAIL</button>
     </div>
     <hr class="my-4">
     <div class="text-right">
-      <button type="button" class="btn btn-primary" [disabled]="msgExito === '' || msgFracaso === ''">CONTINUAR</button>
+      <button type="button" class="btn btn-primary" (click)="nextStep()" [disabled]="destinations[0].email === ''">CONTINUAR</button>
     </div>
   </div>
