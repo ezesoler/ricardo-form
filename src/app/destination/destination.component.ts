@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Router } from "@angular/router";
 import { GlobalService } from '../global.service';
 
 @Component({
@@ -8,13 +9,16 @@ import { GlobalService } from '../global.service';
 })
 export class DestinationComponent implements OnInit {
   destinations = [];
+  subject = "Contacto desde la web";
   extraIndex = 1;
   @ViewChild('extras') extras:ElementRef;
-  constructor() { }
+  constructor(private router: 
+    Router) { }
 
   ngOnInit() {
     this.destinations.push({})
     this.destinations[0].type = "from";
+    this.destinations[0].email = "";
   }
 
   addMail(){
@@ -50,8 +54,9 @@ export class DestinationComponent implements OnInit {
       }
       this.destinations.push(row)
     }
+    GlobalService.subject = this.subject;
     GlobalService.destination = this.destinations;
-    //this.router.navigate(['/messages'], { skipLocationChange: true});
+    this.router.navigate(['/conection'], { skipLocationChange: true});
   }
 
 }

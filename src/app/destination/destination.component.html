@@ -2,6 +2,11 @@
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <div class="form-group w-80 mx-auto text-left">
+      <label for="mf">Asunto del mail:</label>
+      <input type="text" class="form-control" [(ngModel)]="subject" placeholder="Asunto">
+    </div>
+    <hr class="my-4">
+    <div class="form-group w-80 mx-auto text-left">
       <div class="row">
           <div class="col-6">
               <input type="text" class="form-control" [(ngModel)]="destinations[0].email" placeholder="Email">

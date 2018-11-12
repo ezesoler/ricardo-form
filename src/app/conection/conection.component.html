@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <div class="form-group w-50 mx-auto text-left">
+    <input type="text" class="form-control" [(ngModel)]="host" placeholder="Host SMTP">
+  </div>
+  <div class="form-group w-50 mx-auto text-left">
+    <input type="text" class="form-control" [(ngModel)]="usuario" placeholder="Usuario">
+  </div>
+  <div class="form-group w-50 mx-auto text-left">
+    <input type="text" class="form-control" [(ngModel)]="password" placeholder="Password">
+  </div>
+  <hr class="my-4">
+  <div class="text-right">
+    <button type="button" class="btn btn-primary" (click)="nextStep()" [disabled]="host === '' || usuario === '' || password === ''">FINALIZAR</button>
+  </div>
+</div>

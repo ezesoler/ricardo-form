@@ -13,12 +13,17 @@ import { AppComponent } from './app.component';
 import { SanitizeHtmlPipe } from './sanitize-html.pipe';
 import { MessagesComponent } from './messages/messages.component';
 import { DestinationComponent } from './destination/destination.component';
+import { ConectionComponent } from './conection/conection.component';
+import { GeneratorComponent } from './generator/generator.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const APP_ROUTES: Routes = [
   {path: '', component: MainComponent },
   {path: 'estructure', component: EstructureComponent },
   {path: 'messages', component: MessagesComponent },
-  {path: 'destination', component: DestinationComponent }
+  {path: 'destination', component: DestinationComponent },
+  {path: 'conection', component: ConectionComponent },
+  {path: 'generator', component: GeneratorComponent }
 ];
 
 @NgModule({
@@ -30,7 +35,9 @@ const APP_ROUTES: Routes = [
     EstructureComponent,
     SanitizeHtmlPipe,
     MessagesComponent,
-    DestinationComponent
+    DestinationComponent,
+    ConectionComponent,
+    GeneratorComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +45,7 @@ const APP_ROUTES: Routes = [
     FormsModule,
     NgbModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],

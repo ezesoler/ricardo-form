@@ -88,7 +88,7 @@ export class EstructureComponent implements OnInit {
     }else{
       document.querySelector("#errorMsg").innerHTML = `
         <div class="alert alert-danger mt-4" role="alert">
-          Completá los campos requeridos zapelle!
+          Completá los campos requeridos zapalle!
         </div>
       `
     }
