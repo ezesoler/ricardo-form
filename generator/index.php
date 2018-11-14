@@ -13,7 +13,7 @@
 		$body;
 		foreach ($data->inputs as &$input) {
 			$required = "";
-			if($input->type == "true"){
+			if($input->requerido == "true"){
 				$required = " required ";
 			}
 			$label = "<label>$input->label</label>";
