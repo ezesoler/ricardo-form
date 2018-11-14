@@ -179,6 +179,7 @@ export class EstructureComponent implements OnInit {
   }
 
   nextStep(){
+    document.querySelector<HTMLElement>("#progress").style.width = "40%";
     this.router.navigate(['/messages'], { skipLocationChange: true});
   }
 

@@ -56,6 +56,7 @@ export class DestinationComponent implements OnInit {
     }
     GlobalService.subject = this.subject;
     GlobalService.destination = this.destinations;
+    document.querySelector<HTMLElement>("#progress").style.width = "80%";
     this.router.navigate(['/conection'], { skipLocationChange: true});
   }
 

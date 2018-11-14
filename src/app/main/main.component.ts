@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
   formid:string = '';
 
   constructor(private router: 
-    Router) { 
+    Router) {
     }
 
   ngOnInit() {
@@ -19,6 +19,7 @@ export class MainComponent implements OnInit {
 
   nextStep(){
     GlobalService.nameForm = this.formid;
+    document.querySelector<HTMLElement>("#progress").style.width = "20%";
     this.router.navigate(['/estructure'], { skipLocationChange: true});
   }
 

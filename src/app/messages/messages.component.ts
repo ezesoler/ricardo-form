@@ -18,6 +18,7 @@ export class MessagesComponent implements OnInit {
 
   nextStep(){
     GlobalService.msg = {success:this.msgExito,fail:this.msgFracaso};
+    document.querySelector<HTMLElement>("#progress").style.width = "60%";
     this.router.navigate(['/destination'], { skipLocationChange: true});
   }
 

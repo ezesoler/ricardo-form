@@ -19,6 +19,7 @@ export class ConectionComponent implements OnInit {
 
   nextStep(){
     GlobalService.smtp = {host:this.host,user:this.usuario,password:this.password};
+    document.querySelector<HTMLElement>("#progress").style.width = "100%";
     this.router.navigate(['/generator'], { skipLocationChange: true});
   }
 

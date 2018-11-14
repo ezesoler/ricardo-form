@@ -29,7 +29,7 @@ export class GeneratorComponent implements OnInit {
         this.loadingText = "Listo!";
         this.file = "./generator/out/"+data["file"]+".zip";
       }else{
-
+        this.loadingText = "Error :(";
       }
     });
     
