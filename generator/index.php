@@ -23,7 +23,7 @@
 				$label = "";
 			}
 			$id = strtolower($input->id);
-			if($input->type === "text" || $input->type === "email" || $input->type === "number" || $input->type === "date" || $input->type === "password"){
+			if($input->type === "text" || $input->type === "email" || $input->type === "number" || $input->type === "date" || $input->type === "password" || $input->type === "file"){
 				$inputs .= "\t$label<p><input type=\"$input->type\" name=\"$id\" $placeholder $required /></p>\n";
 			}elseif($input->type === "textarea"){
 				$inputs .= "\t$label<p><textarea name=\"$id\" $placeholder $required></textarea></p>\n";
@@ -50,13 +50,23 @@
 				}
 				$inputs .=	$checks;
 			}
-			$vars .= "\t\$$id = trim(\$_POST['$id']);\n";
-			$body .= "\t\$msg .= \"<p><strong>$input->label:</strong> \$$id </p>\";\n";
+			if($input->type != "file"){
+				$vars .= "\t\$$id = trim(\$_POST['$id']);\n";
+				$body .= "\t\$msg .= \"<p><strong>$input->label:</strong> \$$id </p>\";\n";	
+			}
 		}
 
 		$formhtml = file_get_contents('form.html');
 
 		$formhtml = str_replace("{name}", strtolower($data->name),$formhtml);
+		$multipart = "";
+
+		if($data->multi == "true"){
+			$multipart = " enctype=\"multipart/form-data\" ";
+		}
+
+		$formhtml = str_replace("{multi}", $multipart,$formhtml);
+
 		$formhtml = str_replace("{inputs}", $inputs,$formhtml);
 
 		$js = file_get_contents('form.js');
@@ -67,9 +77,9 @@
 			if($destination->type === "from"){
 				$destinations .= "\t\$mail->AddAddress('$destination->email','$destination->name');\n";
 			}elseif($destination->type === "cc"){
-				$destinations .= "\t\$mail->AddCC('$destination->email','$destination->name');\n";
+				$destinations .= "\t\$mail->AddCC('$destination->name','$destination->email');\n";
 			}elseif($destination->type === "cco"){
-				$destinations .= "\t\$mail->AddCCO('$destination->email','$destination->name');\n";
+				$destinations .= "\t\$mail->AddCCO('$destination->name','$destination->email');\n";
 			}	
 		}
 

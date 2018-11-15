@@ -24,6 +24,14 @@
 	$mail->Subject	= '{subject}';
 	$mail->Body = $msg;
 	$mail->From = "{user}";
+
+	//Si hay que adjuntar archivos:
+	if (isset($_FILES)) {
+		foreach($_FILES as $file){
+		   $mail->addattachment($file['tmp_name'],$file['name']);
+		}
+	}
+
 	if (isset($nombre)) {
 		$mail->FromName = $nombre;
 	}else{
