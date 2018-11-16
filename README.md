@@ -1,5 +1,5 @@
 <p align="center"><img src="http://ezesoler.com/ricardo/assets/img/rf_logo.png" height="150" />
-<h1>Ricardo Form</h1></p>
+<h1 align="center">Ricardo Form</h1></p>
 
 <p>
 <b>Ricardo Ricardo</b> form es un <i>Wizard</i> para crear un formulario de contacto en HTML para se enviado por mail usando PHP.
