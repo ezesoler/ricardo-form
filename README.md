@@ -20,6 +20,7 @@ La app retorna un archivo ZIP con todos los archivos configurados y listos para 
 <center>
 👉 <a href="http://ezesoler.com/ricardo" >DEMO</a>  👈
 </center>
+------------
 <p>
 El proyecto fue desarrollado con Angular version 7.0.1 y Boostrap 4.1.3
 </p>
