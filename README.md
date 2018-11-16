@@ -1,5 +1,5 @@
-<center><img src="http://ezesoler.com/ricardo/assets/img/rf_logo.png" height="150" />
-<h1>Ricardo Form</h1></center>
+<p align="center"><img src="http://ezesoler.com/ricardo/assets/img/rf_logo.png" height="150" />
+<h1>Ricardo Form</h1></p>
 
 <p>
 <b>Ricardo Ricardo</b> form es un <i>Wizard</i> para crear un formulario de contacto en HTML para se enviado por mail usando PHP.
@@ -17,9 +17,9 @@ La app retorna un archivo ZIP con todos los archivos configurados y listos para 
 
 ------------
 
-<center>
+<p align="center">
 👉 <a href="http://ezesoler.com/ricardo" >DEMO</a>  👈
-</center>
+</p>
 
 ------------
 
@@ -50,4 +50,4 @@ Requerimientos:
 
 ------------
 
-<center><img src="http://ezesoler.com/ricardo/assets/img/loading.gif" /></center>
+<p align="center"><img src="http://ezesoler.com/ricardo/assets/img/loading.gif" /></p>
