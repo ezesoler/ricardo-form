@@ -1,27 +1,50 @@
-# RicardoForm
+<center><img src="http://ezesoler.com/ricardo/assets/img/rf_logo.png" height="150" />
+<h1>Ricardo Form</h1></center>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.1.
+<p>
+<b>Ricardo Ricardo</b> form es un <i>Wizard</i> para crear un formulario de contacto en HTML para se enviado por mail usando PHP.
+</p>
+<p>
+En su interface se puede configurar:
+<ul>
+<li>Los campos que tendrá el formulario</li>
+<li>El asunto y direccion de mail donde deben enviarse los datos del formulario, pudiendo agregar CC, CCO </li>
+<li>Mensaje de éxito y de error</li>
+<li>Datos de conexión a servidor SMTP para el envío</li>
+</ul>
+La app retorna un archivo ZIP con todos los archivos configurados y listos para usar.
+</p>
 
-## Development server
+------------
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<center>
+👉 <a href="http://ezesoler.com/ricardo" >DEMO</a>  👈
+</center>
+<p>
+El proyecto fue desarrollado con Angular version 7.0.1 y Boostrap 4.1.3
+</p>
+<h2>
+Instalación
+</h2>
 
-## Code scaffolding
+<h4>
+Requerimientos:
+</h4>
+<ul>
+<li><a href="https://angular.io/">Angular CLI</a></li>
+</ul>
+###### Clonar repositorio
+`git clone https://github.com/ezesoler/ricardo-form`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+###### Abrir proyecto
+`cd ricardo-form`
 
-## Build
+###### Correr servidor de desarrollo
+`ng serve`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+###### Compilar
+`ng build --prod`
 
-## Running unit tests
+------------
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<center><img src="http://ezesoler.com/ricardo/assets/img/loading.gif" /></center>
