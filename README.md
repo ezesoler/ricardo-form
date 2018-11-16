@@ -2,15 +2,15 @@
 <h1 align="center">Ricardo Form</h1></p>
 
 <p>
-<b>Ricardo Ricardo</b> form es un <i>Wizard</i> para crear un formulario de contacto en HTML para se enviado por mail usando PHP.
+<b>Ricardo Form</b>  es un <i>Wizard</i> para crear un formulario de contacto en HTML para ser enviado por mail usando PHP.
 </p>
 <p>
 En su interface se puede configurar:
 <ul>
-<li>Los campos que tendrá el formulario</li>
-<li>El asunto y direccion de mail donde deben enviarse los datos del formulario, pudiendo agregar CC, CCO </li>
-<li>Mensaje de éxito y de error</li>
-<li>Datos de conexión a servidor SMTP para el envío</li>
+<li>Los campos que tendrá el formulario.</li>
+<li>El asunto y direccion de mail donde deben enviarse los datos del formulario, pudiendo agregar CC, CCO. </li>
+<li>Mensaje de éxito y de error.</li>
+<li>Datos de conexión a servidor SMTP para el envío.</li>
 </ul>
 La app retorna un archivo ZIP con todos los archivos configurados y listos para usar.
 </p>
@@ -36,6 +36,7 @@ Requerimientos:
 <ul>
 <li><a href="https://angular.io/">Angular CLI</a></li>
 </ul>
+
 ###### Clonar repositorio
 `git clone https://github.com/ezesoler/ricardo-form`
 
