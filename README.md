@@ -51,4 +51,14 @@ Requerimientos:
 
 ------------
 
+<h4>
+TO-DO:
+</h4>
+<ul>
+<li>Add reCAPTCHA</li>
+<li>Check conditional in line 3 from sendMail.php</li>
+</ul>
+
+------------
+
 <p align="center"><img src="http://ezesoler.com/ricardo/assets/img/loading.gif" /></p>
