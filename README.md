@@ -57,6 +57,7 @@ TO-DO:
 <ul>
 <li>Add reCAPTCHA</li>
 <li>Check conditional in line 3 from sendMail.php</li>
+<li>Check problem with inputs duplicated in mail body.</li>
 </ul>
 
 ------------
