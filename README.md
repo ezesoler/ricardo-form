@@ -58,6 +58,8 @@ TO-DO:
 <li>Add reCAPTCHA</li>
 <li>Check conditional in line 3 from sendMail.php</li>
 <li>Check problem with inputs duplicated in mail body.</li>
+<li>Add style option fot output html.</li>
+<li>Convert Ricardo Form in similar service Google Forms? 🤔</li>
 </ul>
 
 ------------
